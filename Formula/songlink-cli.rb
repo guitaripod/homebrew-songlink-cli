@@ -5,20 +5,20 @@
 class SonglinkCli < Formula
   desc "Paste an URL from any music service. The app will generate a song.link URL and copy it to your clipboard automatically"
   homepage "https://github.com/marcusziade/homebrew-songlink-cli"
-  version "0.0.6"
+  version "0.0.7"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/marcusziade/songlink-cli/releases/download/v0.0.6/songlink-cli_0.0.6_darwin_arm64.tar.gz"
-      sha256 "5c8354810429ad9ddfba95157ce458fb83ab8d4376be352da0e0d51fa869a310"
+      url "https://github.com/marcusziade/songlink-cli/releases/download/v0.0.7/songlink-cli_0.0.7_darwin_arm64.tar.gz"
+      sha256 "8e9dabcb3d0b76507fa6159595556bab1223893e928c15cba45a0efe4bbc1320"
 
       def install
         bin.install "songlink-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/marcusziade/songlink-cli/releases/download/v0.0.6/songlink-cli_0.0.6_darwin_amd64.tar.gz"
-      sha256 "e57c6e9c61674e3cb31f47e64e0b505a18b7becfd2ff30e36bd9d2bdfcbfcf2c"
+      url "https://github.com/marcusziade/songlink-cli/releases/download/v0.0.7/songlink-cli_0.0.7_darwin_amd64.tar.gz"
+      sha256 "b3dfb39f753f1396acc7a42529e0498531d529525a203c9d620353911c5e3715"
 
       def install
         bin.install "songlink-cli"
@@ -28,16 +28,16 @@ class SonglinkCli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/marcusziade/songlink-cli/releases/download/v0.0.6/songlink-cli_0.0.6_linux_arm64.tar.gz"
-      sha256 "c7ce64c4ae1740a1bbf725b736e44d94a2ae96fa81163332973eb36d565ff94f"
+      url "https://github.com/marcusziade/songlink-cli/releases/download/v0.0.7/songlink-cli_0.0.7_linux_arm64.tar.gz"
+      sha256 "0711caa10f2a16cb3360bddd371fce36d4a66c0b1d45e35b84fe3b3351387c14"
 
       def install
         bin.install "songlink-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/marcusziade/songlink-cli/releases/download/v0.0.6/songlink-cli_0.0.6_linux_amd64.tar.gz"
-      sha256 "a31b220149fba286d075e1ab3a01572a00f1f2af3ea575d73000ab4aaa9f731b"
+      url "https://github.com/marcusziade/songlink-cli/releases/download/v0.0.7/songlink-cli_0.0.7_linux_amd64.tar.gz"
+      sha256 "8dfd8863e663b336a989f1680a4a2974f02039eaa379617399ff190db175cf1b"
 
       def install
         bin.install "songlink-cli"
