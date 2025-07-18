@@ -5,21 +5,21 @@
 class SonglinkCli < Formula
   desc "CLI for retrieving Songlink and Spotify links for music URLs"
   homepage "https://github.com/guitaripod/songlink-cli"
-  version "3.1.0"
+  version "3.2.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/guitaripod/songlink-cli/releases/download/v3.1.0/songlink-cli_Darwin_x86_64.tar.gz"
-      sha256 "1b3e577f7820369ddc73c4fc68a1fcc9e5ce2a245a21aa43538058e24a60fece"
+      url "https://github.com/guitaripod/songlink-cli/releases/download/v3.2.0/songlink-cli_Darwin_x86_64.tar.gz"
+      sha256 "10751171b4d3cc9fc09c8ecfde722822fa7e030ca6143d9006c10d4a1e60268c"
 
       def install
         bin.install "songlink"
       end
     end
     on_arm do
-      url "https://github.com/guitaripod/songlink-cli/releases/download/v3.1.0/songlink-cli_Darwin_arm64.tar.gz"
-      sha256 "d1eabc69ea6e3baf2139c8fd140009dbfe242b17149a4c6afa40821b203a5257"
+      url "https://github.com/guitaripod/songlink-cli/releases/download/v3.2.0/songlink-cli_Darwin_arm64.tar.gz"
+      sha256 "60f2b0f9192d68c8d4e676abbee6d82e8552c74d76aa1fb73c569106c6e21965"
 
       def install
         bin.install "songlink"
@@ -30,8 +30,8 @@ class SonglinkCli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/guitaripod/songlink-cli/releases/download/v3.1.0/songlink-cli_Linux_x86_64.tar.gz"
-        sha256 "2587d1854933f9361301cc39d88b1f01f7ed6602105157b96896596f7d65e7b8"
+        url "https://github.com/guitaripod/songlink-cli/releases/download/v3.2.0/songlink-cli_Linux_x86_64.tar.gz"
+        sha256 "7e4d38d0a7e6cae64b3f15b0045c909a1a0742ee4426ad0cd903bae30683ff0c"
 
         def install
           bin.install "songlink"
@@ -40,8 +40,8 @@ class SonglinkCli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/guitaripod/songlink-cli/releases/download/v3.1.0/songlink-cli_Linux_arm64.tar.gz"
-        sha256 "b8e807257ac58762062df12002226500a0db8e31c9efeb5d098614f9906990a0"
+        url "https://github.com/guitaripod/songlink-cli/releases/download/v3.2.0/songlink-cli_Linux_arm64.tar.gz"
+        sha256 "1d9434578b3cf68f6e5de9dc8ccd8084dc7505fcfa84e4a36e51e4cf7b68dd49"
 
         def install
           bin.install "songlink"
